@@ -62,11 +62,24 @@ img {
     gap: 13px;
 }
 
-.mobile-nav .wrapper .part1 .toggle-btn img {
+.mobile-nav .wrapper .part1 .toggle-btn {
+    position: relative;
+
+}
+
+#toggle1,
+#toggle2 {
     width: 20px;
-    height: 13.9px;
+    height: 15px;
     cursor: pointer;
 
+
+}
+
+#toggle2 {
+    border: 1px solid #4B2E25;
+    padding: 1px ;
+    display: none;
 
 }
 
@@ -74,6 +87,8 @@ img {
     width: 79px;
     height: 51.12px;
 }
+
+
 
 .mobile-nav .wrapper .part2 {
     display: flex;
@@ -630,6 +645,10 @@ img {
     /* nav for mobile device  */
     .mobile-nav {
         display: block;
+    }
+
+    .big-nav {
+        display: none;
     }
 
     /* nav for mobile device end */

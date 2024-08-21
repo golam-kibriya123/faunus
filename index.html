@@ -15,7 +15,8 @@
             <div class="wrapper">
                 <div class="part1">
                     <div class="toggle-btn">
-                        <img src="assets/images/icon/menu.png" alt="">
+                        <img id="toggle1" src="assets/images/icon/menu.png" alt="">
+                        <img id="toggle2" src="assets/images/icon/cross.svg" alt="">
                     </div>
                     <div class="logo">
                         <img src="assets/images/logo/logo.svg" alt="">
@@ -67,7 +68,8 @@
                         <div class="search">
                             <div class="input-control">
                                 <label for="submit"> <img src="assets/images/icon/search.png" alt=""></label>
-                                <input type="search" name="search" id="search" placeholder="Caută Produsul Dorit"> <input type="submit" name="submit">
+                                <input type="search" name="search" id="search" placeholder="Caută Produsul Dorit">
+                                <input type="submit" name="submit">
 
                             </div>
                         </div>
@@ -334,6 +336,19 @@
             </div>
         </div>
     </section>
+
 </body>
+<script>
+    document.getElementById("toggle1").addEventListener("click", () => {
+        document.getElementById('toggle1').style.display = "none";
+        document.getElementById('toggle2').style.display = "block"
+    });
+
+    document.getElementById("toggle2").addEventListener("click", () => {
+        document.getElementById('toggle2').style.display = "none";
+        document.getElementById('toggle1').style.display = "block"
+    });
+
+</script>
 
 </html>
