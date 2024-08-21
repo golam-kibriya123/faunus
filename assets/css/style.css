@@ -27,17 +27,13 @@ img {
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding: 110px 0;
-    height: 100%;
+    column-gap: 100px;
+
 }
 
-.col-1-2 {
-    flex-basis: 50%;
-    height: 100%;
-}
 
 .hero-banner {
     background-image: url(../images/banner-hero\ 1.png);
@@ -77,10 +73,6 @@ img {
     background: #EDDCC2;
 }
 
-.faunus-plant-section .container .row {
-    gap: 50px;
-}
-
 .faunus-plant-section .content {
     color: #4B2E25;
     text-align: left;
@@ -103,8 +95,24 @@ img {
 
 }
 
+.col-1-2 .img {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.faunus-plant-section .img img {
+    aspect-ratio: 10/6.5;
+}
+
 .quality-section {
-    margin: 110px 0;
+    padding: 110px 0;
+}
+
+.quality-section .container {
+    background: #F9F8F2;
 }
 
 .quality-section .quality-gallery .qualitys .type-1 {
@@ -147,4 +155,177 @@ img {
     width: 100px;
     aspect-ratio: 1/1;
     margin-bottom: 32px;
+}
+
+/* asociatia-section */
+.asociatia-section .container {
+    background:
+        #757F5F;
+    color: #fff;
+}
+
+.asociatia-section .content h2 {
+    font-family: "Josefin Sans";
+    font-size: 48px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 70px;
+}
+
+.asociatia-section .content h2>span {
+    font-weight: 700;
+}
+
+.asociatia-section .content p {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+
+}
+
+/* team work */
+.team-work-section {
+    margin: 110px 0;
+}
+
+.team-work-section .container .row {
+    justify-content: center;
+    padding: 0;
+    gap: 0;
+}
+
+
+.team-work-section .row:nth-child(odd) .content {
+    padding-left: 100px;
+    padding-right: 50px;
+}
+
+.team-work-section .row:nth-child(even) .content {
+    padding-right: 100px;
+    padding-left: 50px;
+}
+
+.team-work-section .content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+    padding: 70px 0;
+}
+
+
+.team-work-section .content h2 {
+    font-family: "Josefin Sans";
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 46px;
+    color: #313131;
+    margin-bottom: 40px;
+
+
+}
+
+.team-work-section .content p {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #313131;
+
+}
+
+.team-work-section .container .row .col-1-2 .img {
+    height: 100%;
+}
+
+.team-work-section .container .row .col-1-2 .img img {
+    height: 100%;
+}
+
+.mereu-timpul .container {
+    background: #EDDCC2;
+    padding-top: 110px;
+    padding-bottom: 250px;
+    position: relative;
+}
+
+.mereu-timpul .container .content-1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mereu-timpul .container .content-1 h2 {
+    font-family: "Josefin Sans";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: center;
+    color: #4B2E25;
+    margin-bottom: 60px;
+}
+
+.mereu-timpul .container .content-1 p {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    color: #4B2E25;
+
+}
+
+.mereu-timpul .container .sub-content {
+    width: 80%; height: auto;
+    background-image: url(../images/sb-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    position: absolute;
+    bottom: -50%;
+    left: 10%;
+    border-radius: 50px;
+
+
+}
+
+.mereu-timpul .container .sub-content .items {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 200px;
+}
+
+.mereu-timpul .container .sub-content h2 {
+    font-family: "Josefin Sans";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.mereu-timpul .container .sub-content p {
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center;
+
+}
+
+.mereu-timpul .container .sub-content button {
+    margin-top: 42px;
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 700;
+    color: #49682F;
+    border: none;
+
+
 }
