@@ -78,7 +78,7 @@ img {
 
 #toggle2 {
     border: 1px solid #4B2E25;
-    padding: 1px ;
+    padding: 1px;
     display: none;
 
 }
@@ -639,6 +639,95 @@ img {
 
 }
 
+/* footer section */
+footer .container {
+    background: #ffff;
+    padding-top: 140px;
+    padding-bottom: 40px;
+}
+
+footer .container .footer-top .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: start;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+footer .container .footer-top .content .footer-list {}
+
+footer .container .footer-top .content .footer-list .list-title {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #4B2E25;
+    margin: 12px 0;
+}
+
+footer .container .footer-top .content .footer-list .list-description {
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #4B2E25;
+    margin-bottom: 12px;
+}
+
+footer .container .footer-top .content .footer-list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 6px;
+    list-style: none;
+}
+
+footer .container .footer-top .content .footer-list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+footer .container .footer-top .content .footer-list ul a {
+    display: block;
+}
+
+footer .container .footer-top .content .footer-list ul a,
+footer .container .footer-top .content .footer-list ul li {
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #4B2E25;
+    text-decoration: none;
+
+}
+
+footer .container .footer-top .content .footer-list ul li span {
+    display: flex;
+    align-items: start;
+    gap: 1px;
+    padding: 13px 8px;
+    margin-right: 5px;
+    background: #E1E7DD;
+    color: #49682F;
+    font-weight: 700;
+}
+
+footer .container .footer-top .content .footer-list ul li span img {
+    width: 24px;
+    margin-right: 3px;
+}
+
+footer .container .footer-top .content .footer-list ul .footer-phone {
+    margin-bottom: 30px;
+}
+
+footer .container .footer-top .content .footer-list ul li>img {
+    width: 57px;
+    padding: 7px;
+}
+
 /* for mobile */
 @media only screen and (max-width: 600px) {
 
@@ -894,6 +983,11 @@ img {
 
 
 
+    }
+
+    /* suntem-section */
+    .suntem-section .container {
+        padding: 350px 0 110px 0;
     }
 
     .suntem-section .container .content {
