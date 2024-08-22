@@ -654,7 +654,14 @@ footer .container .footer-top .content {
     gap: 30px;
 }
 
-footer .container .footer-top .content .footer-list {}
+footer .container .footer-top .content .media {
+    display: none;
+    align-items: center;
+}
+
+footer .container .footer-top .content .media img {
+    max-width: 30px;
+}
 
 footer .container .footer-top .content .footer-list .list-title {
     font-family: "Open Sans";
@@ -663,6 +670,13 @@ footer .container .footer-top .content .footer-list .list-title {
     line-height: 24px;
     color: #4B2E25;
     margin: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .container .footer-top .content .footer-list .list-title img {
+    display: none;
 }
 
 footer .container .footer-top .content .footer-list .list-description {
@@ -726,6 +740,33 @@ footer .container .footer-top .content .footer-list ul .footer-phone {
 footer .container .footer-top .content .footer-list ul li>img {
     width: 57px;
     padding: 7px;
+}
+
+/* footer bottom */
+.footer-bottom {
+    padding-top: 114px;
+    margin-top: 50px;
+    border-top: 1px solid;
+}
+
+.footer-bottom .content ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 24px 0;
+}
+
+.footer-bottom .content ul li {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    color: #4b2e258f;
+}
+
+.footer-bottom .content ul .copy-r {
+    list-style: none;
 }
 
 /* for mobile */
@@ -987,7 +1028,7 @@ footer .container .footer-top .content .footer-list ul li>img {
 
     /* suntem-section */
     .suntem-section .container {
-        padding: 350px 0 110px 0;
+        padding: 350px 0 50px 0;
     }
 
     .suntem-section .container .content {
@@ -1011,4 +1052,37 @@ footer .container .footer-top .content .footer-list ul li>img {
 
     }
 
+    /* footer-top  */
+    footer .container {
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    footer .container .footer-top .content {
+        grid-template-columns: 3fr;
+        gap: 20px;
+        margin-bottom: 300px;
+    }
+
+    footer .container .footer-top .content .footer-list .list-title {
+        margin: 0;
+    }
+
+    footer .container .footer-top .content .footer-list .list-title img {
+        display: block;
+        background: #00000075;
+    }
+
+    footer .container .footer-top .content .footer-list .list-description,
+    footer .container .footer-top .content .footer-list ul {
+        display: none;
+    }
+
+    footer .container .footer-top .content .media {
+        display: flex;
+    }
+
+    .footer-bottom {
+        display: none;
+    }
 }
