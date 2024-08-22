@@ -358,6 +358,10 @@ img {
 
 }
 
+.faunus-plant-section .content .img {
+    display: none;
+}
+
 .faunus-plant-section .content h2 {
     font-family: "Josefin Sans";
     font-size: 48px;
@@ -453,6 +457,10 @@ img {
 
 .asociatia-section .content h2>span {
     font-weight: 700;
+}
+
+.asociatia-section .content .img {
+    display: none;
 }
 
 .asociatia-section .content p {
@@ -828,6 +836,11 @@ footer .container .footer-top .content .footer-list ul li>img {
 
     }
 
+    .faunus-plant-section .content .img {
+        display: block;
+        padding: 30px 0;
+    }
+
     .faunus-plant-section .content h2 {
         font-size: 24px;
         line-height: 32px;
@@ -840,9 +853,10 @@ footer .container .footer-top .content .footer-list ul li>img {
 
     }
 
-    .col-1-2 .img {
-        padding: 10px 0;
+    .faunus-plant-section .col-1-2:nth-child(2) {
+        display: none;
     }
+
 
     .faunus-plant-section .img img {
         aspect-ratio: inherit;
@@ -904,8 +918,13 @@ footer .container .footer-top .content .footer-list ul li>img {
 
     }
 
-    .asociatia-section .img img {
-        max-width: 80%;
+    .asociatia-section .content .img {
+        display: block;
+        padding: 30px 0;
+    }
+
+    .asociatia-section .col-1-2:first-child {
+        display: none;
     }
 
     /* team work */
