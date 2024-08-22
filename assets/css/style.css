@@ -923,7 +923,7 @@ footer .container .footer-top .content .footer-list ul li>img {
         padding: 30px 0;
     }
 
-    .asociatia-section .col-1-2:first-child {
+    .asociatia-section .col-1-2>.img {
         display: none;
     }
 
